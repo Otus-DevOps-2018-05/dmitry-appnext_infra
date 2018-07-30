@@ -2,7 +2,7 @@
 dmitry-appnext Infra repository
 
 # Table of content
-- [Cloud bastion](#cloud-bastion)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-bastion)]
+- [Cloud bastion](#cloud-bastion)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-bastion)]
 
 # Homework03. Cloud bastion
 
