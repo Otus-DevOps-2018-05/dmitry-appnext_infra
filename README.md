@@ -3,6 +3,14 @@ dmitry-appnext Infra repository
 
 # Table of content
 - [Cloud bastion](#cloud-bastion)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-bastion)]
+- [Cloud testapp](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-testapp)]
+
+
+# Homework04. Cloud testapp
+
+testapp_IP = 23.251.143.246
+testapp_port = 9292
+
 
 # Homework03. Cloud bastion
 
