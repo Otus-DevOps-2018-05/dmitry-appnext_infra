@@ -6,6 +6,18 @@ dmitry-appnext Infra repository
 - [Cloud testapp](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-testapp)]
 
 
+# Homework06. Terraform-1
+
+Проблемы, которые я обнаружил:
+Получилась длинная строчка с помощью который задаются ssh-ключи на проект:
+```
+resource "google_compute_project_metadata_item" "appuser1" {
+        ...
+        value   = "appuser1:${file(var.public_key_path1)}appuser2:${file(var.public_key_path1)}"
+}
+```
+
+
 # Homework04. Cloud testapp
 
 testapp_IP = 23.251.143.246
