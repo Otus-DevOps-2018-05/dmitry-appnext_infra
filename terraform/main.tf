@@ -7,7 +7,7 @@ provider "google" {
 resource "google_compute_project_metadata_item" "appuser1" {
   project = "${var.project}"
   key     = "ssh-keys"
-  value   = "appuser1:${file(var.public_key_path1)}appuser2:${file(var.public_key_path1)}"
+  value   = "appuser1:${file(var.public_key_path)}appuser2:${file(var.public_key_path)}"
 }
 
 resource "google_compute_instance" "app" {
