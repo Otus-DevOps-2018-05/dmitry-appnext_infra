@@ -4,6 +4,25 @@ dmitry-appnext Infra repository
 # Table of content
 - [Cloud bastion](#cloud-bastion)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-bastion)]
 - [Cloud testapp](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-testapp)]
+- [Terraform-1](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
+
+
+# Homework06. Terraform-1
+
+### Что было сделано
+Описана инфраструктура проекта с помощью терраформ
+
+### Проблемы
+Проблемы, которые я обнаружил:
+Получилась длинная строчка с помощью который задаются ssh-ключи на проект:
+```
+resource "google_compute_project_metadata_item" "appuser1" {
+        ...
+        value   = "appuser1:${file(var.public_key_path1)}appuser2:${file(var.public_key_path1)}"
+}
+```
+
+
 
 
 # Homework04. Cloud testapp
