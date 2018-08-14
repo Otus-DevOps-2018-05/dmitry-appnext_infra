@@ -1,0 +1,10 @@
+{
+    "proj_id":"new proj_id",
+    "machine_type": "type",
+    "source_image_family": "ubuntu-1604-lts",
+    "disk_size": "15",
+    "disk_type": "pd-ssd",
+    "image_description": "desc",
+    "tags":"nice tags",
+    "ssh_username":"super duper user"
+}
