@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=appuser
 WorkingDirectory=/home/appuser/reddit
+EnvironmentFile=/tmp/envvars
 ExecStart=/bin/bash -lc 'puma'
-EnvironmentFile=-/tmp/env
 Restart=always
 
 [Install]
