@@ -7,6 +7,15 @@ dmitry-appnext Infra repository
 - [Terraform-1](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
 
 
+# Homework 07. Terraform-2
+
+### Что было сделано
+Были созданы модули для конфиграции
+
+Сделано задание со * - настроен backend в google bucket для prod & stage конфигураций
+Убедился, что при одновременном запуске команды terraform apply для 2х разных конфигураций
+срабатывает LOCK-механизм
+
 # Homework06. Terraform-1
 
 ### Что было сделано
