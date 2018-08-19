@@ -32,7 +32,7 @@ resource "google_compute_instance" "app" {
 
   provisioner "file" {
     content      = "DATABASE_URL=${var.db_url}\n"
-    destination = "/tmp/envvars"
+    destination = "/home/appuser/envfile"
   }
 
   provisioner "file" {

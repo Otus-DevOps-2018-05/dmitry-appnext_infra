@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=appuser
 WorkingDirectory=/home/appuser/reddit
-EnvironmentFile=/tmp/envvars
+EnvironmentFile=/home/appuser/envfile
 ExecStart=/bin/bash -lc 'puma'
 Restart=always
 
