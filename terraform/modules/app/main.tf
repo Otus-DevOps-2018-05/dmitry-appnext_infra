@@ -30,19 +30,19 @@ resource "google_compute_instance" "app" {
   }
 
 
-  provisioner "file" {
-    content      = "DATABASE_URL=${var.db_url}\n"
-    destination = "/home/appuser/envfile"
-  }
+  # provisioner "file" {
+  #   content      = "DATABASE_URL=${var.db_url}\n"
+  #   destination = "/home/appuser/envfile"
+  # }
 
-  provisioner "file" {
-    source      = "${path.module}/files/puma.service"
-    destination = "/tmp/puma.service"
-  }
+  # provisioner "file" {
+  #   source      = "${path.module}/files/puma.service"
+  #   destination = "/tmp/puma.service"
+  # }
 
-  provisioner "remote-exec" {
-    script = "${path.module}/files/deploy.sh"
-  }
+  # provisioner "remote-exec" {
+  #   script = "${path.module}/files/deploy.sh"
+  # }
 }
 
 resource "google_compute_address" "app_ip" {
