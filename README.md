@@ -18,6 +18,10 @@ dmitry-appnext Infra repository
   Качаем gce.py, делаем его executable
   Кладем *.json файл с ключами в папку с инвентору
   Создаем файл secrets.py, заполняем его
+  Затем можно выполнить команду ```gce.py --list >> inf.json``` и увидеть описание текущей инфарструктуры.
+  После этого необходимо поменять asnible.cfg (inventory = ./gce.py)
+  Затем обновить плейбуки (поменять hosts на тэги инстансов из gce.py --list и vars если нужно)
+  Готово! Вы великолепны!
 
 
 # Homework 08. Ansible-1
