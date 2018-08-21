@@ -8,6 +8,18 @@ dmitry-appnext Infra repository
 - [Terraform-2](#terraform-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-2)]
 - [Ansible-1](#ansible-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-1)]
 
+# Homework 09. Ansible-2
+
+### Что было сделано
+
+- Задание со *: исследовать dynamic invenotry для GCE
+  Читаем доки здесь: https://docs.ansible.com/ansible/2.5/scenario_guides/guide_gce.html
+  Затем создаем сервис-аккаунт и ключи к нему (как создать - написано здесь https://support.google.com/cloud/answer/6158849?hl=en&ref_topic=6262490#serviceaccounts)
+  Качаем gce.py, делаем его executable
+  Кладем *.json файл с ключами в папку с инвентору
+  Создаем файл secrets.py, заполняем его
+
+
 # Homework 08. Ansible-1
 
 ### Что было сделано
