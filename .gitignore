@@ -6,3 +6,4 @@
 .terraform/
 *.retry
 /ansible/infra.json
+/ansible/secrets.py*
