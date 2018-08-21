@@ -7,6 +7,8 @@ dmitry-appnext Infra repository
 - [Terraform-1](#terraform-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
 - [Terraform-2](#terraform-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-2)]
 - [Ansible-1](#ansible-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-1)]
+- [Ansible-2](#ansible-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-2)]
+
 
 # Homework 09. Ansible-2
 
