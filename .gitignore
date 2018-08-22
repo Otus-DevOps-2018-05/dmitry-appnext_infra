@@ -8,3 +8,4 @@
 /ansible/**/infra.json
 /ansible/**/secrets.py*
 jdauphant.nginx
+vault.key
