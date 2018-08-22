@@ -5,5 +5,5 @@
 *.tfvars
 .terraform/
 *.retry
-/ansible/infra.json
-/ansible/secrets.py*
+/ansible/**/infra.json
+/ansible/**/secrets.py*
