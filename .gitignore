@@ -7,3 +7,4 @@
 *.retry
 /ansible/**/infra.json
 /ansible/**/secrets.py*
+jdauphant.nginx

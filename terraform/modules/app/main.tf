@@ -28,21 +28,6 @@ resource "google_compute_instance" "app" {
     agent       = false
     private_key = "${file(var.private_key_path)}"
   }
-
-
-  # provisioner "file" {
-  #   content      = "DATABASE_URL=${var.db_url}\n"
-  #   destination = "/home/appuser/envfile"
-  # }
-
-  # provisioner "file" {
-  #   source      = "${path.module}/files/puma.service"
-  #   destination = "/tmp/puma.service"
-  # }
-
-  # provisioner "remote-exec" {
-  #   script = "${path.module}/files/deploy.sh"
-  # }
 }
 
 resource "google_compute_address" "app_ip" {
@@ -58,7 +43,7 @@ resource "google_compute_firewall" "firewall_puma" {
   # Какой доступ разрешить
   allow {
     protocol = "tcp"
-    ports    = ["9292"]
+    ports    = ["9292", "80"]
   }
 
   # Каким адресам разрешаем доступ
