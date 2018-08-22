@@ -12,7 +12,7 @@
     dest: "/home/appuser/db_config"
 
 - name: enable puma
-  systemd: 
+  systemd:
     name: "puma"
     enabled: yes
 
