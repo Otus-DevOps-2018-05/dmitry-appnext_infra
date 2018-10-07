@@ -6,7 +6,12 @@ dmitry-appnext Infra repository
 - [Cloud testapp](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-testapp)]
 - [Terraform-1](#terraform-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
 - [Terraform-2](#terraform-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-2)]
+- [Ansible-1](#ansible-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-1)]
 
+# Homework 08. Ansible-1
+
+### Что было сделано
+Создан плейбук клонирования репозитория с гитхаба. Если репозиторий был склонирован раньше, то в PLAY RECAP свойство changed = 0
 
 # Homework 07. Terraform-2
 
