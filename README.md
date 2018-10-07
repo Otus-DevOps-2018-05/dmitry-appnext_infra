@@ -4,8 +4,22 @@ dmitry-appnext Infra repository
 # Table of content
 - [Cloud bastion](#cloud-bastion)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-bastion)]
 - [Cloud testapp](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=cloud-testapp)]
-- [Terraform-1](#cloud-testapp)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
+- [Terraform-1](#terraform-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-1)]
+- [Terraform-2](#terraform-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=terraform-2)]
 
+
+# Homework 07. Terraform-2
+
+### Что было сделано
+Были созданы модули для конфигурации
+
+Сделано задание со * - настроен backend в google bucket для prod & stage конфигураций.
+Убедился, что при одновременном запуске команды terraform apply для 2х разных конфигураций
+срабатывает LOCK-механизм
+
+#### Проблемы
+Выполняя задание со * столкнулся с тем, что сервис PUMA не запускается с переменными окружения, которые я ему передаю внутри .unit файла и приложение, соответственно, не видит базу данных
+проверял я командой `cat /proc/3055/environ`, (3055 - PID) в ответ получил `292) [reddit]`
 
 # Homework06. Terraform-1
 
