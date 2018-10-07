@@ -5,4 +5,7 @@
 *.tfvars
 .terraform/
 *.retry
-/ansible/infra.json
+/ansible/**/infra.json
+/ansible/**/secrets.py*
+jdauphant.nginx
+vault.key
