@@ -86,7 +86,6 @@ resource "google_compute_project_metadata_item" "appuser1" {
 
 
 
-
 # Homework04. Cloud testapp
 
 testapp_IP = 23.251.143.246
