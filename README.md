@@ -9,6 +9,29 @@ dmitry-appnext Infra repository
 - [Ansible-1](#ansible-1)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-1)]
 - [Ansible-2](#ansible-2)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-2)]
 - [Ansible-3](#ansible-3)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-3)]
+- [Ansible-4](#ansible-4)  [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/dmitry-appnext_infra.svg?branch=ansible-4)]
+
+# Homework 11. Ansible-4
+
+### Что было сделано
+
+задание "Создание VM"
+ - установлен virtualbox и vagrant
+ - описана инфраструктура проекта (appserver & dbserver) при помощи vagrant и VBox
+
+задание "Доработка ролей"
+ - настроен ансибл-провижинг для вагранта
+ - параметризация ролей (можно задать имя пользователя, который осуществляет deploy)
+
+ - *: корректная работа проксирования ngnix
+
+задание "Тестирование роли"
+ - установлена молекула
+ - с помощью команды "molecule init" созданы заготовки тестов для роли DB
+ - добавлены тесты для роли DB 
+ - добавлен тест, проверяющий что монго слушает порт 27017
+ - тесты запущены (команда "molecule verify")
+
 
 # Homework 10. Ansible-3
 
@@ -60,7 +83,6 @@ resource "google_compute_project_metadata_item" "appuser1" {
         value   = "appuser1:${file(var.public_key_path1)}appuser2:${file(var.public_key_path1)}"
 }
 ```
-
 
 
 
